@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Marked - React Wrapper</title>
+    <script src="../../node_modules/marked/marked.min.js"></script>
+    <script src="../../build/marked-reactify.js"></script>
+    <script src="../../node_modules/react/dist/react.js"></script>
+</head>
+<body>
+<div id="md"></div>
+<script>
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState == 4) {
+            var markdown = xhr.responseText;
+
+            /* Essentially this is how you use marked-react-wrapper
+             * Where marked is the instance of marked,
+             */
+
+            React.render(marked_reactify(marked, {})(markdown, {
+                renderer: new marked.Renderer(),
+                gfm: true,
+                tables: true,
+                breaks: false,
+                pedantic: false,
+                sanitize: false,
+                smartLists: true,
+                smartypants: false
+            }), document.getElementById('md'));
+        }
+    };
+    xhr.open("GET", "../../README.md", true);
+    xhr.send();
+</script>
+</body>
+</html>
