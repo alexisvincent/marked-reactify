@@ -1,4 +1,6 @@
-# Marked Reactify - A react wrapper for marked
+# Marked Reactify
+### A react wrapper for marked
+
 Marked is a markdown parser and compiler. Built for speed.
 
 Marked Reactify takes markdown as a string and returns a React Component Tree of your HTML.
