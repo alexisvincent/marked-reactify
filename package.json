@@ -1,5 +1,5 @@
 {
-  "name": "marked-react-wrapper",
+  "name": "marked-reactify",
   "version": "0.0.1",
   "description": "A React Wrapper for Marked - A markdown parser and compiler. Built for speed.",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alexisvincent/marked-react-wrapper.git"
+    "url": "git+https://github.com/alexisvincent/marked-reactify.git"
   },
   "keywords": [
     "marked",
@@ -21,9 +21,9 @@
   "author": "Alexis Vincent",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/alexisvincent/marked-react-wrapper/issues"
+    "url": "https://github.com/alexisvincent/marked-reactify/issues"
   },
-  "homepage": "https://github.com/alexisvincent/marked-react-wrapper#readme",
+  "homepage": "https://github.com/alexisvincent/marked-reactify#readme",
   "devDependencies": {
     "browserify": "^11.0.1",
     "gulp": "^3.9.0",
